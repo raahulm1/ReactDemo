@@ -73,7 +73,7 @@ const UsersInner = () => {
   };
 
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ textAlign: 'center'}}>
       <h2>User List</h2>
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
@@ -83,7 +83,7 @@ const UsersInner = () => {
         </div>
       ))}
 
-      <div style={{ marginTop: 20 }}>
+      <div >
         <h3>Add New User</h3>
         <input
           type="text"

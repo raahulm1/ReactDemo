@@ -55,7 +55,7 @@ const UserList = () => {
   if (error) return <p>Error: {error.message}</p>;
 
   return (
-    <ul>
+    <ul style={{ listStylePosition:'inside',textAlign: 'center'}}>
       <h3>Use API</h3>
       {data && data.map(user => (
         <li key={user.id}>{user.name}</li>

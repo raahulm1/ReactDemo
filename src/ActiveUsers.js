@@ -64,7 +64,7 @@ const ActiveUsers = () => {
   const activeUsers = useSelector(activeUsersByPosts);
 
   return (
-    <div>
+    <div style={{ textAlign: 'center'}}>
       <ul>
         <h2>Users and posts which done in last 7 days </h2>
         {activeUsers.map(user => (

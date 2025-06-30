@@ -29,11 +29,11 @@ const TodoList = () => {
   };
 
   return (
-    <div>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h2>To-Do List</h2>
       <input value={task} onChange={(e) => setTask(e.target.value)} />
       <button onClick={addTodo}>Add</button>
-      <ul>
+      <ul style={{ listStylePosition: 'inside',textAlign: 'center', marginTop: '50px' }}>
         {todos.map((todo, index) => (
           <li key={index}>
             <span

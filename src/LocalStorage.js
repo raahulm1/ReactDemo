@@ -47,7 +47,7 @@ function LocalStorage() {
   const [count, setCount] = useLocalStorage('counter', 0);
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+    <div style={{ textAlign: 'center'}}>
       <h2>LocalStorage Counter</h2>
       <p>Count: {count}</p>
       <button onClick={() => setCount(c => c + 1)}>Increment</button>

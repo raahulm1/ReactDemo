@@ -38,7 +38,7 @@ const BankAccount = () => {
   const balance = useSelector(state => state.bank.balance);
 
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ textAlign: 'center'}}>
       <h2>Bank Account</h2>
       <h3>Current Balance: ₹{balance}</h3>
       <button onClick={() => dispatch(deposit(500))}>Deposit ₹500</button>
